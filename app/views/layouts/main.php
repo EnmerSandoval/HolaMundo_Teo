@@ -5,7 +5,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gym MVC (PHP puro)</title>
+
+  <title>HOLA MUNDO</title>
+
+  <!-- CSS (una sola vez) -->
   <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/styles.css">
 </head>
 <body>
@@ -23,9 +26,12 @@
     <a href="?c=compras&a=index">Compras</a>
   </nav>
 </header>
+
 <main class="container">
   <?php \Core\View::partial($view ?? 'home/index', get_defined_vars()); ?>
 </main>
+
+<!-- JS (una sola vez, mejor al final) -->
 <script src="<?= BASE_URL ?>/assets/js/app.js"></script>
 </body>
 </html>
